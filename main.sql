@@ -32,3 +32,7 @@ CREATE TABLE historico_clinico (
   observacoes TEXT,
   FOREIGN KEY (paciente_id) REFERENCES pacientes(id)
 );
+
+
+
+--Adicionar mais tabelas
