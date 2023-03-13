@@ -7,7 +7,7 @@ CREATE TABLE pacientes (
   email VARCHAR(255),
   telefone VARCHAR(20),
   endereco VARCHAR(255)
-)
+);
 
 
 --Tabela "consultas":
@@ -20,7 +20,7 @@ CREATE TABLE consultas (
   valor DECIMAL(10,2),
   observacoes TEXT,
   FOREIGN KEY (paciente_id) REFERENCES pacientes(id)
-)
+);
 
 
 --Tabela "historico_clinico":
@@ -31,8 +31,4 @@ CREATE TABLE historico_clinico (
   data_hora DATETIME,
   observacoes TEXT,
   FOREIGN KEY (paciente_id) REFERENCES pacientes(id)
-)
-
-
-
---Adicionar mais tabelas
+);
